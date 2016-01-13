@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3_AngularJS 进阶-Controllers 的使用</title>
+	<link rel="stylesheet" href="css/foundation.min.css"/>
+</head>
+<body style="padding: 10px;" ng-app="app">
+	<div ng-controller="FirstCtrl">
+		<h1 ng-bind="msg"></h1>
+	</div>
+	<div ng-controller="NextCtrl">
+		<input type="text" ng-model="msg" />
+		<h1>{{msg}}</h1>
+	</div>
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/myctrl3.js"></script>
+</body>
+</html>
